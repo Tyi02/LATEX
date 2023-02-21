@@ -1,7 +1,7 @@
 \documentclass{beamer}
 
 
-\title{VennDiagram presentation}
+\title{Venn Diagram presentation}
 \author{By: Terry Yi, Kelly Ong, Christopher Zaharia, Micheal O'Malley}
 \date{\today}
 
@@ -15,11 +15,27 @@
 		\frametitle{Table of Contents}
 		
 		\begin{itemize}
-			\item<1-> Building a Venn Diagram
-			\item<2-> When to Use a Venn Diagram
-			\item<3-> How to Label a Venn Diagram 
+			\item When to Use a Venn Diagram
+		\end{itemize}
+		\begin{itemize}
+			\item Building a Venn Diagram
+		\end{itemize}
+		\begin{itemize}
+			\item How to Label a Venn Diagram 
 		\end{itemize}
 	}
-	
+	\frame
+	{
+		\frametitle{When to Use a Venn Diagram}
+	}
+	\frame
+	{
+		\frametitle{Building a Venn Diagram}
+	}
+	\frame
+	{
+		\frametitle{How to Label a Venn Diagram}
+	}
 	
 \end{document}
+
