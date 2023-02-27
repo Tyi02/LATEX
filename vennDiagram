@@ -25,21 +25,32 @@
 				\item{CHRIS ADD STUFF HERE}
 			\end{itemize}
 	\end{frame}
-	
-	
+
 	\begin{frame}[t,label=frameA]{How to Build a Venn Diagram}
 		\begin{itemize}
-			\item{Use the "tikz" package}
+			\item{\textbf{1. Use the "tikz" package}}
+			\item{The "tikz" package is a tool used to create graphic elements in LaTeX}
+			\item{At the beginning of your document, import the tikz package with " \textbackslash usepackage\{tikz\} "}
 			\begin{figure}[h]
 				\includegraphics[scale=.6]{venn-diagram-code.jpg}
 				\caption{This is the code to create a Venn Diagram in Latex}
 			\end{figure}
-			\pause
-			\item{How to draw the first circle}
-			\pause
-			\item{How to create Intersection}
 		\end{itemize}
 	\end{frame}
+	
+	\begin{frame}[t,label=frameA]{How to Build a Venn Diagram}
+		\begin{itemize}
+		\item{\textbf{2. How to draw the first circle}}
+		\item{INSERT HOW TO DRAW FIRST CIRCLE INSTRUCTIONS}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}[t,label=frameA]{How to Build a Venn Diagram}
+		\begin{itemize}
+			\item{\textbf{3. How to create "Intersection"}}
+			\item{INSERT INSTRUCTIONS ON HOW TO CREATE INTERSECTION}
+		\end{itemize}
+		\end{frame}
 	
 	\begin{frame}[t,label=frameA] {Complete Venn Diagram}
 		\begin{tikzpicture}
