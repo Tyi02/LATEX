@@ -2,60 +2,73 @@
 \usepackage{tikz}
 
 
+
 \title{VennDiagram presentation}
 \author{By: Terry Yi, Kelly Ong, Christopher Zaharia, Micheal O'Malley}
 
 
 \begin{document}
-
-\frame{\titlepage}
-\begin{frame}[t,label=frameA] {Table of Contents}
-\begin{itemize}
-\item{When to Use Venn Diagrams}
-\item{How to Build Venn Diagrams}
-\item{How to label Venn Diagrams}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[t,label=frameA]{When to use Venn Diagrams}
-\end{frame}
-
-
-\begin{frame}[t,label=frameA]{How to Build a Venn Diagram}
-\begin{itemize}
-\item{Use the "tikz" package}
-\pause
-\item{How to draw the first circle}
-\pause
-\item{How to create Intersection}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[t,label=frameA] {Complete Venn Diagram}
-\begin{tikzpicture}
-\node [draw,
-    circle,
-    minimum size =3cm,
-    label={135:$A$}] (A) at (0,0){};
- 
-% Set B
-\node [draw,
-    circle,
-    minimum size =3cm,
-    label={45:$B$}] (B) at (1.8,0){};
- 
-% Set intersection label
-\node at (0.9,0) {$A\cap B$};
- 
-\end{tikzpicture}
-\end{frame}
-
-\begin{frame}[t,label=frameA]{How to label Venn Diagrams}
-
-\end{frame}
-
-
-
+	
+	\frame{\titlepage}
+	\begin{frame}[t,label=frameA] {Table of Contents}
+		\begin{itemize}
+			\item{When to Use Venn Diagrams}
+			\item{How to Build Venn Diagrams}
+			\item{How to label Venn Diagrams}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}[t,label=frameA]{When to use Venn Diagrams}
+			\begin{itemize}
+				\item {We can visually represent differences and similarities between two concepts}
+				\item{Used to visualize the logical relationships between sets and their elements}
+				\item{CHRIS ADD STUFF HERE}
+			\end{itemize}
+	\end{frame}
+	
+	
+	\begin{frame}[t,label=frameA]{How to Build a Venn Diagram}
+		\begin{itemize}
+			\item{Use the "tikz" package}
+			\begin{figure}[h]
+				\includegraphics[scale=.6]{venn-diagram-code.jpg}
+				\caption{This is the code to create a Venn Diagram in Latex}
+			\end{figure}
+			\pause
+			\item{How to draw the first circle}
+			\pause
+			\item{How to create Intersection}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}[t,label=frameA] {Complete Venn Diagram}
+		\begin{tikzpicture}
+			\node [draw,
+			circle,
+			minimum size =3cm,
+			label={135:$A$}] (A) at (0,0){};
+			
+			% Set B
+			\node [draw,
+			circle,
+			minimum size =3cm,
+			label={45:$B$}] (B) at (1.8,0){};
+			
+			% Set intersection label
+			\node at (0.9,0) {$A\cap B$};
+			
+		\end{tikzpicture}
+	\end{frame}
+	
+	\begin{frame}[t,label=frameA]{How to label Venn Diagrams}
+		\begin{itemize}
+			\item {MIKE ADD STUFF HERE}
+		\end{itemize}
+		
+	\end{frame}
+	
+	
+	
 	
 \end{document}
 %Link for basically everything we need :)
