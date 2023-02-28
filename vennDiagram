@@ -56,10 +56,6 @@
 			\item{\textbf{1. Use the "tikz" package}}
 			\item{The "tikz" package is a tool used to create graphic elements in LaTeX}
 			\item{At the beginning of your document, import the tikz package with " \textbackslash usepackage\{tikz\} "}
-			%\begin{figure}[h]
-				%\includegraphics[scale=.6]{venn-diagram-code.jpg}
-				\%caption{This is the code to create a Venn Diagram in Latex}
-			%\end{figure}
 		\end{itemize}
 	\end{frame}
 	
@@ -103,8 +99,11 @@
 			
 			% Set intersection label
 			\node at (0.9,0) {$A\cap B$};
-			
 		\end{tikzpicture}
+		\begin{figure}[h]
+			\includegraphics[scale=.6]{venn-diagram-code.jpg}
+			\caption{This is the code to create a the above Venn Diagram}
+		\end{figure}
 	\end{frame}
 	
 	%	Mike Page 1
@@ -144,11 +143,11 @@
 				"\textbackslash{}node[draw, circle, minimum size = 2cm, fill=cyan!25, label=\{[label distance=0cm,font=\textbackslash{}tiny,
 				gray]45:B\}] (circleB) at (5,0)\{\};" \large result in the following:}
 		\end{itemize}
-		\begin{tikzpicture}
-			\node[draw, circle, minimum size = 2cm, fill=purple!75, label={[label distance=0.5cm,font=\large, red]225:A}] (circleA) at (0,0){};
-			\node[draw, circle, minimum size = 2cm, fill=cyan!25, label={[label distance=0cm,font=\tiny,
+		%\begin{tikzpicture}
+			%\node[draw, circle, minimum size = 2cm, fill=purple!75, label={[label distance=0.5cm,font=\large, red]225:A}] (circleA) at (0,0){};
+			%\node[draw, circle, minimum size = 2cm, fill=cyan!25, label={[label distance=0cm,font=\tiny,
 				gray]45:B}] (circleB) at (5,0){};
-		\end{tikzpicture}
+		%\end{tikzpicture}
 	\end{frame}
 	
 	
