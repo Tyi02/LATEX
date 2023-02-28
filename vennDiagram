@@ -56,24 +56,35 @@
 			\item{\textbf{1. Use the "tikz" package}}
 			\item{The "tikz" package is a tool used to create graphic elements in LaTeX}
 			\item{At the beginning of your document, import the tikz package with " \textbackslash usepackage\{tikz\} "}
-			%			\begin{figure}[h]
-				%				\includegraphics[scale=.6]{venn-diagram-code.jpg}
-				%				\caption{This is the code to create a Venn Diagram in Latex}
-				%			\end{figure}
+			%\begin{figure}[h]
+				%\includegraphics[scale=.6]{venn-diagram-code.jpg}
+				%\caption{This is the code to create a Venn Diagram in Latex}
+			%\end{figure}
 		\end{itemize}
 	\end{frame}
 	
 	\begin{frame}[t,label=frameA]{How to Build a Venn Diagram}
 		\begin{itemize}
 			\item{\textbf{2. How to draw the first circle}}
-			\item{INSERT HOW TO DRAW FIRST CIRCLE INSTRUCTIONS}
+			\begin{itemize}
+				\item {1. Use the node command with draw, circle, and minimum size options}
+				\item{2. You can then use the label option to label your circle}
+				\item{3. Choose a name for your circle and coordinates as to where your circle should be}
+				\item{4. Finally, insert content using \{\}}
+				\item{Your final code should look like this: 
+				\textbf{\textbackslash node [draw, circle, minimum size = value, label = \textdollar text\textdollar] (name) at (x,y)\{circle content\}}}
+			\end{itemize}
 		\end{itemize}
 	\end{frame}
 	
 	\begin{frame}[t,label=frameA]{How to Build a Venn Diagram}
 		\begin{itemize}
 			\item{\textbf{3. How to create "Intersection"}}
-			\item{INSERT INSTRUCTIONS ON HOW TO CREATE INTERSECTION}
+			\begin{itemize}
+				\item {To set the intersection label, use the \textbackslash node command and choose coordinates to place the label.}
+				\item{You can add intersection content using \{\}}
+				\item{Your code will look like this: \textbf{\textbackslash node at (x,y) \{intersection content\}}}
+			\end{itemize}
 		\end{itemize}
 	\end{frame}
 	
