@@ -3,7 +3,7 @@
 
 
 
-\title{VennDiagram presentation}
+\title{Venn Diagrams using LaTeX}
 \author{By: Terry Yi, Kelly Ong, Christopher Zaharia, Micheal O'Malley}
 
 
@@ -58,7 +58,7 @@
 			\item{At the beginning of your document, import the tikz package with " \textbackslash usepackage\{tikz\} "}
 			%\begin{figure}[h]
 				%\includegraphics[scale=.6]{venn-diagram-code.jpg}
-				%\caption{This is the code to create a Venn Diagram in Latex}
+				\%caption{This is the code to create a Venn Diagram in Latex}
 			%\end{figure}
 		\end{itemize}
 	\end{frame}
