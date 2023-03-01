@@ -152,42 +152,34 @@
 	
 	
 	%Mike Page 4
-	\begin{frame}[t,label=frameA]{Filling and Labeling Intersections}
+	\begin{frame}[t,label=frameA]{Filling Labeling Intersections}
 		\begin{itemize}
-			\item {We color and label intersections in the same way that we label and color individual circles.}
+			\item {To fill intersections, we use the same code, but in reference to the clipped intersection.}
+			\item {However, to label intersections, we will typically use a base text node rather than labeling the scoped intersection, for the sake of readability.}
+			\item {This can be done by creating a node at the coordinates of the intersection.}
+			\item {\tiny \textbackslash{}node at (0.9,0) \{\$Fruits\$\}; \large results in the following label:}
 		\end{itemize}
 		\begin{tikzpicture}
-			\node[draw,
+			\node [draw,
 			circle,
-			minimum size =3cm,
-			fill=blue!50,
-			label={[label distance=-1.5cm, font=\large]:Good}] (Good) at (0.9,1.5){};
+			minimum size =4cm, fill = red!50,
+			label={[red]180:$Apples$}] (Apples) at (0,0){};
 			
-			\node[draw,
+			\node [draw,
 			circle,
-			minimum size =3cm,
-			fill=green!50,
-			label={[label distance=-1.5cm,font=\large]180:Cheap}] (Cheap) at (0,0){};
+			minimum size =4cm, fill=yellow!50,
+			label={[yellow]360:$Bananas$}] (Bananas) at (1.8,0){};
 			
-			\node[draw,
-			circle,
-			minimum size =3cm,
-			fill=red!50,
-			label={[label distance=-1.5cm,font=\large]360:Fast}] (Fast) at (1.8,0){};
-			
-			%Intersection
 			\begin{scope}
-				\clip (0,0) circle(1.5cm);
-				\clip (1.8,0) circle(1.5cm);
-				\clip (0.9,1.5) circle(1.5cm);
-				\fill[gray!20](0,0) circle(1.5cm);
-				
+				\clip (0,0) circle(2cm);
+				\clip (1.8,0) circle(2cm);
+				\fill[orange!50](0,0) circle(2cm);
 			\end{scope}
 			
-			%outline
-			\draw (0,0) circle(1.5cm);
-			\draw (1.8,0) circle(1.5cm);
-			\draw (0.9,1.5) circle(1.5cm);
+			\node at (0.9,0) {$Fruits$};
+			
+			\draw (0,0) circle(2cm);
+			\draw (1.8,0) circle(2cm);
 		\end{tikzpicture}
 		
 	\end{frame}
